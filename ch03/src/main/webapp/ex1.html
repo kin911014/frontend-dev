@@ -4,6 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>마진과 패딩</title>
 <style type="text/css">
+*{
+	margin:0; padding:0;
+}
 body {
 	font-family: "돋움", "맑은 고딕";
 	font-size: 0.8em;
@@ -14,9 +17,25 @@ body {
 	border:1px solid #666;
 	width:300px;
 	background-color: #FFC;
+	margin:10px;
+	padding:10px;
 }
 
 </style>
+<script type="text/javascript">
+	function onDivClicked(el){
+		console.log(parseInt(el.style.marginTop));
+		c = 0;
+		var intervalId = setInterval(function(){
+			if(c<3){
+				console.log(c);
+				c++;
+				return;
+			}
+			clearInterval(intervalId);
+		}, 1000);
+	}
+</script>
 </head>
 
 <body>
