@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+// 팝어창
+var child = window.open('', '', 'width=200, height=200');
+
+// 현재 모니터창의 width와 height
+var widthScreen = screen.width;
+var heightScreen = screen.height;
+
+console.log(widthScreen + ":" + heightScreen);
+
+// 팝어창을 스크린사이즈만큼 늘리기
+funcion
+child.moveto(0,0);
+child.resizeTo(widthScreen, heightScreen);
+
+</script>
+</head>
+<body>
+	<h1>BOM(Browser Object Model)</h1>
+	<h2>2. screen 객체</h2>
+</body>
+</html>
